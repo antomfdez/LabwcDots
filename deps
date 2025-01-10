@@ -1,7 +1,7 @@
-wlr-randr \
-mako \
-swaylock \
-swaybg \
-swayidle \
-labwc \
-alacritty \
+wlr-randr
+mako
+swaylock
+swaybg
+swayidle
+labwc
+alacritty
