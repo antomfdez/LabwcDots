@@ -64,6 +64,12 @@
   <item label="Reconfigure">
     <action name="Reconfigure" />
   </item>
+  <item label="Pkg Clean">
+     <action name="Execute" command="alacritty -e bash -c &quot;sudo pacman -Qqdt | sudo pacman -R --noconfirm -&quot;" />
+  </item>
+  <item label="Sys Update">
+     <action name="Execute" command="alacritty -e bash -c &quot;sudo pacman -Syu; yay -Syu&quot;" />
+  </item>
   <item label="Exit">
     <action name="Exit" />
   </item>
