@@ -2,7 +2,7 @@
 
 # Set background color.
 swaybg -i ~/.labwc -m fill >/dev/null 2>&1 &
-wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003 >/dev/null 2>&1 &
+# wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003 >/dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
@@ -11,6 +11,7 @@ wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003 >/dev/null 2>&1 &
 #     output HDMI-A-1 position 1366,0
 #     output eDP-1 position 0,0
 #   }
+kanshi >/dev/null 2>&1 &
 
 # Launch a panel such as yambar or waybar.
 sfwbar >/dev/null 2>&1 &

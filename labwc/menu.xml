@@ -74,10 +74,14 @@
     <action name="Exit" />
   </item>
   <item label="Sleep">
+    <action name="Execute" command="swaylock -f -c 000000" />
     <action name="Execute" command="systemctl suspend" />
   </item>
   <item label="Poweroff">
     <action name="Execute" command="systemctl -i poweroff" />
+  </item>
+  <item label="Reboot">
+    <action name="Execute" command="reboot" />
   </item>
 </menu>
 
