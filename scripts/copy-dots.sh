@@ -4,3 +4,4 @@ cp -r ~/.config/sfwbar .
 cp -r ~/.themes/Nightmare-01 .
 cp -r ~/.config/kanshi .
 cp -r ~/scripts .
+cp -r ~/.labwc .
