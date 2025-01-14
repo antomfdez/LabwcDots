@@ -74,7 +74,7 @@
     <action name="Exit" />
   </item>
   <item label="Sleep">
-    <action name="Execute" command="swaylock -f -c 000000" />
+    <action name="Execute" command="swaylock -i ~/.labwc -f" />
     <action name="Execute" command="systemctl suspend" />
   </item>
   <item label="Poweroff">

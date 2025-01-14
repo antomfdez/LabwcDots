@@ -29,7 +29,7 @@ XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
 
 XCURSOR_THEME=volantes_cursors
 # XCURSOR_THEME=capitaine-cursors
-# XCURSOR_SIZE=24
+XCURSOR_SIZE=16
 
 ## Disable hardware cursors. Most users would not want to do this, but if you
 ## are experiencing issues with disappearing cursors, this might fix it.
