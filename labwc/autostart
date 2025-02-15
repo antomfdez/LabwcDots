@@ -29,7 +29,8 @@ mako >/dev/null 2>&1 &
 # (since a837fef). Instead use a wlr-output-power-management client such as
 # https://git.sr.ht/~leon_plickat/wlopm
 swayidle -w \
-	timeout 180 'swaylock -f -c 000000' \
-	timeout 600 'wlopm --off \*' \
-	resume 'wlopm --on \*' \
-	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+  timeout 180 'if ! playerctl -a status | grep -q "Playing"; then swaylock -f -c 000000; fi' \
+  timeout 600 'if ! playerctl -a status | grep -q "Playing"; then wlopm --off \*; fi' \
+  resume 'wlopm --on \*' \
+  before-sleep 'swaylock -f -c 000000' \
+  >/dev/null 2>&1 &

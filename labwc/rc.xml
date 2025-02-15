@@ -8,19 +8,31 @@
 <labwc_config>
   <theme>
     <name>Nightmare-01</name>
-    <cornerRadius>1</cornerRadius>
+    <cornerRadius>10</cornerRadius>
     <font name="sans" size="10" />
   </theme>
 
   <keyboard>
     <default />
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute" command="pamixer -d 5" />
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute" command="pamixer -i 5" />
+    </keybind>
     <!-- Use a different terminal emulator -->
     <keybind key="W-Return">
       <action name="Execute" command="alacritty" />
     </keybind>
     <keybind key="W-u">
       <action name="Execute">
-        <command>sh -c 'grim -g "`slurp`" - | wl-copy' </command>
+        <command>grimblast copy area</command>
+      </action>
+    </keybind>
+    
+    <keybind key="W-r">
+      <action name="Execute">
+	      <command>~/.config/rofi/launchers/type-1/launcher.sh</command>
       </action>
     </keybind>
     

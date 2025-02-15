@@ -8,3 +8,6 @@ alacritty
 kanshi
 ttf-fantasque-nerd
 fish
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+playerctl
