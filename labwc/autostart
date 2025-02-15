@@ -32,5 +32,5 @@ swayidle -w \
   timeout 180 'if ! playerctl -a status | grep -q "Playing"; then swaylock -f -c 000000; fi' \
   timeout 600 'if ! playerctl -a status | grep -q "Playing"; then wlopm --off \*; fi' \
   resume 'wlopm --on \*' \
-  before-sleep 'swaylock -f -i ~/.labwc --indicator-idle-visible' \
+  before-sleep 'swaylock -f -i ~/.labblur --indicator-idle-visible' \
   >/dev/null 2>&1 &

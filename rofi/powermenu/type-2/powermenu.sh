@@ -98,7 +98,7 @@ case ${chosen} in
         ;;
     $lock)
 		if [[ -x '/usr/bin/swaylock' ]]; then
-			swaylock -i ~/.labwc --indicator-idle-visible
+			swaylock -i ~/.labblur --indicator-idle-visible
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi

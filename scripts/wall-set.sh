@@ -17,6 +17,7 @@ fi
 # Copy the wallpaper to ~/.labwc
 LABWC_WALLPAPER_FILE="$HOME/.labwc"
 cp "$WALLPAPER_PATH" "$LABWC_WALLPAPER_FILE"
+magick ~/.labwc -blur 0x9 ~/.labblur
 
 # Set ~/.labwc as the wallpaper using swaybg
 swaybg -i "$LABWC_WALLPAPER_FILE" -m fill >/dev/null 2>&1 & disown
