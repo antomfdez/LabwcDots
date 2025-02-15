@@ -5,3 +5,4 @@ cp -r ~/.themes/Nightmare-01 .
 cp -r ~/.config/kanshi .
 cp -r ~/scripts .
 cp -r ~/.labwc .
+cp -r ~/.config/rofi .

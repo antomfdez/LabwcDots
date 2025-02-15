@@ -10,4 +10,6 @@ mkdir ~/.config/kanshi >/dev/null 2>&1
 cp -r kanshi ~/.config
 mkdir ~/scripts >/dev/null 2>&1
 cp -r scripts ~/
+mkdir ~/.config/rofi >/dev/null 2>&1
+cp -r rofi ~/.config
 cp .labwc ~/
