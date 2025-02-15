@@ -35,6 +35,12 @@
 	      <command>~/.config/rofi/launchers/type-1/launcher.sh</command>
       </action>
     </keybind>
+
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>~/.config/rofi/powermenu/type-2/powermenu.sh</command>
+      </action>
+    </keybind>
     
     <!--
       Remove a previously defined keybind
