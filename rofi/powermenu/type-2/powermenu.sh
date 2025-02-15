@@ -71,6 +71,7 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
+			labwc --exit
 			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
@@ -96,8 +97,8 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
+		if [[ -x '/usr/bin/swaylock' ]]; then
+			swaylock -i ~/.labwc --indicator-idle-visible
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi
