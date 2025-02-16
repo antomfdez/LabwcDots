@@ -33,14 +33,14 @@ else
 fi
 
 # Clone GTK theme and icon theme
-THEME_PATH="$USER_HOME/.themes/Material-Black-Cherry"
+THEME_PATH="$USER_HOME/.themes/Material-*"
 ICON_PATH="$USER_HOME/.local/share/icons/WhiteSur-red-dark"
 if [[ ! -d "$THEME_PATH" ]]; then
   log "Installing GTK theme..."
   sudo -u "$SUDO_USER" mkdir -p "$USER_HOME/.themes"
-  sudo -u "$SUDO_USER" git clone https://github.com/rtlewis1/GTK.git /tmp/gtk
+  sudo -u "$SUDO_USER" git clone https://github.com/rtlewis1/GTK.git -b Material-Black-Colors-Desktop /tmp/gtk
   pushd /tmp/gtk >/dev/null
-  sudo -u "$SUDO_USER" cp -r "Material-Black-Cherry" "$USER_HOME/.themes/"
+  sudo -u "$SUDO_USER" cp -r * "$USER_HOME/.themes/"
   popd >/dev/null
   rm -rf /tmp/gtk
 else
@@ -51,7 +51,7 @@ if [[ ! -d "$ICON_PATH" ]]; then
   log "Installing ICON theme..."
   sudo -u "$SUDO_USER" git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git /tmp/iconws
   pushd /tmp/iconws >/dev/null
-  sudo -u "$SUDO_USER" ./install.sh -t red -a
+  sudo -u "$SUDO_USER" ./install.sh -t all -a
   popd >/dev/null
   rm -rf /tmp/iconws
 else
