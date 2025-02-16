@@ -8,6 +8,7 @@ cp -r ~/.themes/Nightmare-03 .
 cp -r ~/.config/kanshi .
 cp -r ~/scripts .
 cp -r ~/.labwc .
+cp -r ~/.labblur .
 cp -r ~/.config/rofi .
 cp -r ~/.config/labwc-themes .
 

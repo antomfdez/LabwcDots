@@ -17,3 +17,4 @@ cp -r rofi ~/.config
 mkdir ~/.config/labwc-themes >/dev/null 2>&1
 cp -r labwc-themes ~/.config
 cp .labwc ~/
+cp .labblur ~/
