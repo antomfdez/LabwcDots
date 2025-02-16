@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+  <theme>
+    <name>Nightmare-03</name>
+    <cornerRadius>10</cornerRadius>
+    <font name="sans" size="10" />
+  </theme>
+
+  <keyboard>
+    <default />
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute" command="pamixer -d 5" />
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute" command="pamixer -i 5" />
+    </keybind>
+    <!-- Use a different terminal emulator -->
+    <keybind key="W-Return">
+      <action name="Execute" command="alacritty" />
+    </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <command>grimblast copy area</command>
+      </action>
+    </keybind>
+    
+    <keybind key="W-r">
+      <action name="Execute">
+	      <command>~/.config/rofi/launchers/type-1/launcher.sh</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>~/.config/rofi/powermenu/type-2/powermenu.sh</command>
+      </action>
+    </keybind>
+    
+    <!--
+      Remove a previously defined keybind
+      A shorter alternative is <keybind key="W-F4" />
+    -->
+    <keybind key="W-F4">
+      <action name="None" />
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+</labwc_config>
