@@ -4,6 +4,7 @@ cp -r ~/.config/sfwbar .
 cp -r ~/.themes/Nightmare-01 .
 cp -r ~/.themes/Nightmare-02 .
 cp -r ~/.themes/Nightmare-03 .
+cp -r ~/.themes/OB-Everforest-Dark .
 
 cp -r ~/.config/kanshi .
 cp -r ~/scripts .
