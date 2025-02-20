@@ -7,4 +7,3 @@ my labwc dotfiles
 
 ![Screenshot](https://github.com/antomfdez/LabwcDots/blob/main/assets/theme.png)
 ![Screenshot](https://github.com/antomfdez/LabwcDots/blob/main/assets/theme1.png)
-![Screenshot](https://github.com/antomfdez/LabwcDots/blob/main/assets/theme2.png)
