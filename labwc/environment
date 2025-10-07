@@ -17,10 +17,10 @@
 ## For further details, see xkeyboard-config(7)
 ##
 
-XKB_DEFAULT_LAYOUT=us
-XKB_DEFAULT_VARIANT=dvorak
+# XKB_DEFAULT_LAYOUT=us
+# XKB_DEFAULT_VARIANT=dvorak
 # XKB_DEFAULT_LAYOUT=se,us(intl)
-XKB_DEFAULT_OPTIONS=caps:super
+# XKB_DEFAULT_OPTIONS=caps:super
 # XKB_DEFAULT_OPTIONS=grp:shift_caps_toggle
 
 ##
