@@ -32,6 +32,22 @@ else
   log "Yay is already installed. Skipping..."
 fi
 
+# Install dependencies from deps file
+if [[ -f deps ]]; then
+  log "Installing dependencies from 'deps' file..."
+  xargs -a deps -r -- pacman -S --needed --noconfirm
+else
+  log "No 'deps' file found. Skipping..."
+fi
+
+# Install AUR dependencies from yay-deps file
+if [[ -f yay-deps ]]; then
+  log "Installing AUR dependencies from 'yay-deps' file..."
+  sudo -u "$SUDO_USER" xargs -a yay-deps -r -- yay -S --needed --noconfirm
+else
+  log "No 'yay-deps' file found. Skipping..."
+fi
+
 # Clone GTK theme and icon theme
 THEME_PATH="$USER_HOME/.themes/Material-*"
 ICON_PATH="$USER_HOME/.local/share/icons/WhiteSur-red-dark"
@@ -56,22 +72,6 @@ if [[ ! -d "$ICON_PATH" ]]; then
   rm -rf /tmp/iconws
 else
   log "ICON theme WhiteSur-red-dark already installed. Skipping..."
-fi
-
-# Install dependencies from deps file
-if [[ -f deps ]]; then
-  log "Installing dependencies from 'deps' file..."
-  xargs -a deps -r -- pacman -S --needed --noconfirm
-else
-  log "No 'deps' file found. Skipping..."
-fi
-
-# Install AUR dependencies from yay-deps file
-if [[ -f yay-deps ]]; then
-  log "Installing AUR dependencies from 'yay-deps' file..."
-  sudo -u "$SUDO_USER" xargs -a yay-deps -r -- yay -S --needed --noconfirm
-else
-  log "No 'yay-deps' file found. Skipping..."
 fi
 
 # Execute paste-dots.sh if it exists and is executable
