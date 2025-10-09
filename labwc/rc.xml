@@ -26,9 +26,9 @@
     </keybind>
     <keybind key="W-u">
       <action name="Execute">
-        <command>grimblast copy area</command>
+        <command>sh -c 'grim -g "$(slurp)" - | wl-copy'</command>
       </action>
-    </keybind>
+   </keybind>
     
     <keybind key="W-r">
       <action name="Execute">
